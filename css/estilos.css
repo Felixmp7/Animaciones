@@ -1,3 +1,10 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 .pelota{
   width: 100px;
   height: 100px;
@@ -8,6 +15,10 @@
   transition-timing-function: ease; */
   transition: 1.5s;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 /* .pelota:hover {
@@ -35,7 +46,8 @@ transition-timing-function: ease;
 .canasta{
   border: 1px solid #1F3744;
   position: relative;
-  height: 200px;
+  height: 100px;
+  width: 100%;
 }
 .canasta:hover .pelota.a{
   left: calc(50% - 100px);
