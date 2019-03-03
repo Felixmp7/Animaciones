@@ -21,6 +21,7 @@ body{
   position: relative;
   height: 100px;
   width: 100%;
+  transform: rotate(15deg);
 }
 .canasta:hover .pelota.a{
   left: calc(50% - 100px);
@@ -41,3 +42,10 @@ body{
   background-color: blue;
   right: 0;
 }
+
+/*
+Rotar elemento = rotate(grados)
+Sesgar elemento = skew(grados)
+Cambiar posición = translate(pixeles)
+Cambiar tamaño = scale(1 = 100%, 2 = 200%, 0 )
+ */
