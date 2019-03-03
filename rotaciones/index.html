@@ -2,10 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/rotaciones.css">
     <title>Rotaciones</title>
+    <style>
+      body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family:  Arial;
+      }
+
+      .container{
+        border: 1px solid black;
+      }
+
+      .cuadrado{
+        width: 200px;
+        height: 200px;
+        background-color: #1F3744;
+        margin: 20px;
+        transform: rotate(45deg);
+      }
+    </style>
   </head>
   <body>
-
+    <div class="container">
+      <div class="cuadrado"> Hola Mundo!</div>
+    </div>
   </body>
 </html>
