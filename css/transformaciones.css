@@ -21,7 +21,7 @@ body{
   position: relative;
   height: 100px;
   width: 100%;
-  transform: rotate(15deg);
+  transform: rotate(15deg) skew(10deg) translate(20px) scale(.8);
 }
 .canasta:hover .pelota.a{
   left: calc(50% - 100px);
