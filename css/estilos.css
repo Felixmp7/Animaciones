@@ -2,11 +2,12 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #1F3744;
+  /* background-color: #1F3744; */
   /* transition-property: width, height;
   transition-duration: 1s;
   transition-timing-function: ease; */
-  transition: all 1s ease;
+  transition: 1s;
+  position: absolute;
 }
 
 /* .pelota:hover {
@@ -33,8 +34,20 @@ transition-timing-function: ease;
 
 .canasta{
   border: 1px solid #1F3744;
+  position: relative;
+  height: 200px;
 }
 .canasta:hover .pelota{
   width: 200px;
   height: 200px;
+}
+
+.pelota.a{
+  background-color: red;
+  left: 0;
+}
+
+.pelota.b{
+  background-color: blue;
+  right: 0;
 }
