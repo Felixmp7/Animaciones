@@ -1,0 +1,28 @@
+.pelota{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1F3744;
+  transition-property: width, height;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier();
+}
+
+.pelota:hover {
+  width: 200px;
+  height: 200px;
+}
+
+/*
+Qué propiedades va a cambiar en la transición
+transition-property: width, height;
+
+Cuánto tiempo va a durar la transición
+transition-duration: 1s;
+
+Cuánto tiempo va a tardar la transición en ocurrir
+transition-delay: 250ms;
+
+Función que determina de qué forma se calculan los valores intermedios de la transición
+transition-timing-function: ease;
+*/
