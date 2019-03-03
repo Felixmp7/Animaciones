@@ -6,7 +6,7 @@
   /* transition-property: width, height;
   transition-duration: 1s;
   transition-timing-function: ease; */
-  transition: 1s;
+  transition: 1.5s;
   position: absolute;
 }
 
@@ -37,9 +37,12 @@ transition-timing-function: ease;
   position: relative;
   height: 200px;
 }
-.canasta:hover .pelota{
-  width: 200px;
-  height: 200px;
+.canasta:hover .pelota.a{
+  left: 50%;
+}
+
+.canasta:hover .pelota.b{
+  right: 50%;
 }
 
 .pelota.a{
