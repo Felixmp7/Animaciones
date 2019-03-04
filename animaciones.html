@@ -21,9 +21,9 @@
         border: 1px solid black;
       }
 
-      /* .container:hover .cuadrado{
-
-      } */
+      .container:hover .cuadrado{
+        animation-play-state: paused;
+      }
 
       .cuadrado{
         width: 200px;
@@ -32,17 +32,20 @@
         margin: 20px;
         /* transition: 1s; */
         animation-name: cuadrado;
-        animation-duration: 1s;
-        animation-delay: 1s;
+        animation-duration: 2s;
+        /* animation-delay: 1s; */
         animation-iteration-count: infinite; /* Puede recibir cantidad de veces*/
         animation-timing-function: ease;
-        /* animation-timing-function: ease; */
-        /* animation-timing-function: ease; */
-        /* animation-timing-function: ease; */
-        /* animation-timing-function: ease; */
-        /* animation-direction: alternate; */
-        /* animation-direction: alternate; */
+        /*animation-timing-function: ease-in;
+        animation-timing-function: ease-out;
+        animation-timing-function: ease-in-out;
+        animation-timing-function: linear;*/
+        /*animation-timing-function: cubic-bezier(1, 1,1 ,1);*/
+        /*animation-direction: reverse;*/
         animation-direction: alternate;
+        /*animation-fill-mode: forwards;*/
+        /*animation-play-state: running;*/
+        /*animation-play-state: paused;*/
       }
       @keyframes cuadrado {
         0%{
