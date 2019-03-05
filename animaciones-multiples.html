@@ -39,7 +39,7 @@
         animation-name: cuadrado, escalera;
         animation-duration: 3s;
         /* animation-delay: 1s; */
-        animation-iteration-count: infinite, 2;
+        animation-iteration-count: 3, 2;
         /*animation-direction: reverse;*/
         animation-direction: alternate;
         /*animation-fill-mode: forwards;*/
@@ -87,8 +87,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="cuadrado"> Hola Mundo!</div>
+      <div class="cuadrado" id="cuadrado"> Hola Mundo!</div>
     </div>
+
+    <script type="text/javascript">
+      const cuadrado = document.querySelector('#cuadrado');
+      // console.log(cuadrado)
+      cuadrado.addEventListener('animationend', (evento) => {
+        console.log(evento)
+      })
+    </script>
   </body>
 </html>
 
