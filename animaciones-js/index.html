@@ -61,15 +61,16 @@
       const pelota = document.querySelector('#pelota')
       // console.log(pelota)
       // element.animate(keyframes = [], options = {})
-      const animacion = pelota.animate([
+      const animacion = pelota.animate(
+        [
       // keyframes
-        {
-          transform: 'translateX(0px)'
-        },
-        {
-          transform: 'translateX(500px)'
-        }
-      ],//options
+          {
+            transform: 'translateX(0px)'
+          },
+          {
+            transform: 'translateX(500px)'
+          }
+        ],//options
         {
           duration: 2000,
           // delay: 1000,
@@ -80,6 +81,27 @@
           // iterationStart: .5,
           // endDelay:
         })
+      const playButton = document.querySelector('#play')
+      const pauseButton = document.querySelector('#pause')
+      const stopButton = document.querySelector('#stop')
+      const reverseButton = document.querySelector('#reverse')
+      console.log(animacion)
+
+      playButton.addEventListener('click', () => {
+        animacion.play()
+      })
+
+      pauseButton.addEventListener('click', () => {
+        animacion.pause()
+      })
+
+      stopButton.addEventListener('click', () => {
+        animacion.cancel()
+      })
+
+      reverseButton.addEventListener('click', () => {
+        animacion.reverse()
+      })
     </script>
   </body>
 </html>
