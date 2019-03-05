@@ -95,6 +95,10 @@
       // console.log(cuadrado)
       cuadrado.addEventListener('animationend', (evento) => {
         console.log(evento)
+        if (evento.animationName === 'rebote') {
+          cuadrado.style.animationName = 'cuadrado, escalera'
+          cuadrado.style.animationDuration = '3s'
+        }
       })
     </script>
   </body>
