@@ -26,6 +26,8 @@ body{
   height: 65%;
   border: 20px solid #97c93e;
   border-bottom: none;
+  position: relative;
+  top: 1px;
 }
 .platzi-right{
   width: 100%;
