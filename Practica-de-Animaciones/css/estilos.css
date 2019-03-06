@@ -48,19 +48,19 @@ body{
 @keyframes platzi-base {
   from{
     opacity: 0;
-    transform: rotate(0deg);
+    transform: scale(.3) rotate(0deg);
   }
   30% {
     opacity: 1;
-    transform: rotate(405deg);
+    transform: scale(1) rotate(405deg);
   }
   80%{
     opacity: 1;
-    transform: rotate(405deg);
+    transform: scale(1) rotate(405deg);
   }
   to{
     opacity: 0;
-    transform: rotate(0deg);
+    transform: scale(.1) rotate(0deg);
   }
 }
 
