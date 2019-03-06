@@ -29,5 +29,5 @@ body{
   width: 100%;
   height: 35%;
   border: 20px solid green;
-  /* border-top: none; */
+  border-top: none;
 }
