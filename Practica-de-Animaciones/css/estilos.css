@@ -16,18 +16,20 @@ body{
   width: 100px;
   height: 100px;
   position: relative;
-  background-color: white;
+  /* background-color: white; */
+  transform: rotate(45deg);
+  transition: 2s;
 }
 
 .platzi-left{
   width: 100%;
   height: 65%;
-  border: 20px solid blue;
+  border: 20px solid #97c93e;
   border-bottom: none;
 }
 .platzi-right{
   width: 100%;
   height: 35%;
-  border: 20px solid green;
+  border: 20px solid #97c93e;
   border-top: none;
 }
