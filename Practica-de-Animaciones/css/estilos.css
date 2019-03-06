@@ -17,10 +17,10 @@ body{
   height: 100px;
   position: relative;
   transform: rotate(45deg);
-  transition: 2s;
+  /* transition: 2s; */
 
   animation-name: platzi-base;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 
@@ -48,9 +48,19 @@ body{
 @keyframes platzi-base {
   from{
     opacity: 0;
+    transform: rotate(0deg);
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(405deg);
+  }
+  80%{
+    opacity: 1;
+    transform: rotate(405deg);
   }
   to{
-    opacity: 1;
+    opacity: 0;
+    transform: rotate(0deg);
   }
 }
 
