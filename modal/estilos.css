@@ -55,11 +55,11 @@ img{
   background-color: white;
   padding: 2em;
   border-radius: .5em;
-  animation: animationIN .7s forwards;
+  animation: modalIN .7s forwards;
   text-align: center;
 }
 
-@keyframes animationIN {
+@keyframes modalIN {
   0%{
     transform: translateY(-3000px);
   }
@@ -74,7 +74,7 @@ img{
   }
 }
 
-@keyframes animationOUT {
+@keyframes modalOUT {
   0%{
     transform: translateY(5px);
   }
