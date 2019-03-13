@@ -3,9 +3,39 @@ body{
   /* height: 100vh; */
   align-items: center;
   justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+  flex-direction: column;
 }
 img{
   width: 100%;
+}
+
+.btn{
+  text-align: center;
+  padding: .6em .8em;
+  border: none;
+  background-color: lightgray;
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: inset 0 -.2em rgba(0,0,0, .2);
+  outline: 0;
+  transition: .2s;
+  will-change: transform;
+}
+
+.btn.primary{
+  background-color: #7dc800;
+}
+.btn.warning{
+  background-color: #ff463b;
+}
+
+.btn:active{
+  transform: scale(.9);
 }
 
 .overlay{
@@ -26,6 +56,7 @@ img{
   padding: 2em;
   border-radius: .5em;
   animation: animationIN .7s forwards;
+  text-align: center;
 }
 
 @keyframes animationIN {
