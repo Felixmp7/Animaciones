@@ -9,14 +9,20 @@ body{
   height: 200px;
   background-color: #7dc900;
   /* animation: name time state; */
-  animation: animationIN 2s;
+  animation: animationIN .7s;
 }
 
 @keyframes animationIN {
   0%{
     transform: translateY(-3000px);
   }
-  100%{
-    transform: translateY(0px);
+  50%{
+    transform: translateY(20px);
+  }
+  75%{
+    transform: translateY(-10px);
+  }
+  90%{
+    transform: translateY(5px);
   }
 }
