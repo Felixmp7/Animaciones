@@ -7,16 +7,19 @@
   </head>
   <body>
     <img src="bg.png" alt="modal">
-    <div class="overlay">
-      <div class="modal">
+    <div class="overlay" id="overlay">
+      <div class="modal" id="modal">
         <h1>Atencion!</h1>
         <p>Estas a punto de crear una ventana de modal muy cool!</p>
         <p>Te gustó?</p>
         <div class="modalButtons">
-          <button class="btn primary">Si, está fino</button>
-          <button class="btn warning">No, no me gustó</button>
+          <button id="ok-button"class="btn primary">Si, está fino</button>
+          <button id="dont-button"class="btn warning">No, no me gustó</button>
         </div>
       </div>
     </div>
+    <script>
+      const okButton = document.querySelector('#ok-button')
+    </script>
   </body>
 </html>
