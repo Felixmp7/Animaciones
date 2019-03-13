@@ -4,3 +4,19 @@ body{
   align-items: center;
   justify-content: center;
 }
+.cuadrado{
+  width: 200px;
+  height: 200px;
+  background-color: #7dc900;
+  /* animation: name time state; */
+  animation: animationIN 2s;
+}
+
+@keyframes animationIN {
+  0%{
+    transform: translateY(-3000px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
