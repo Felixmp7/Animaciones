@@ -9,7 +9,7 @@ body{
   height: 200px;
   background-color: #7dc900;
   /* animation: name time state; */
-  animation: animationIN .7s;
+  animation: animationOUT .7s forwards;
 }
 
 @keyframes animationIN {
@@ -24,5 +24,20 @@ body{
   }
   90%{
     transform: translateY(5px);
+  }
+}
+
+@keyframes animationOUT {
+  0%{
+    transform: translateY(5px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  75%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(-3000px);
   }
 }
