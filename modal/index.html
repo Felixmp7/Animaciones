@@ -14,17 +14,28 @@
         <p>Te gustó?</p>
         <div class="modalButtons">
           <button id="ok-button"class="btn primary">Si, está fino</button>
-          <button id="dont-button"class="btn warning">No, no me gustó</button>
+          <button id="decline-button"class="btn warning">No, no me gustó</button>
         </div>
       </div>
     </div>
     <script>
       const $okButton = document.querySelector('#ok-button')
+      const $declineButton = document.querySelector('#decline-button')
       const $modal = document.querySelector('#modal')
       const $overlay = document.querySelector('#overlay')
 
       $okButton.addEventListener('click', (e) => {
         // console.log(e);
+        $modal.style.animation = 'modalOUT .7s forwards'
+        $overlay.classList.remove('active')
+      })
+
+      $declineButton.addEventListener('click', (e) => {
+        $modal.style.animation = 'modalOUT .7s forwards'
+        $overlay.classList.remove('active')
+      })
+
+      $overlay.addEventListener('click', (e) => {
         $modal.style.animation = 'modalOUT .7s forwards'
         $overlay.classList.remove('active')
       })
