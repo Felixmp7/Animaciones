@@ -48,6 +48,14 @@ img{
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+
+.overlay.active{
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal{

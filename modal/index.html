@@ -7,7 +7,7 @@
   </head>
   <body>
     <img src="bg.png" alt="modal">
-    <div class="overlay" id="overlay">
+    <div class="overlay active" id="overlay">
       <div class="modal" id="modal">
         <h1>Atencion!</h1>
         <p>Estas a punto de crear una ventana de modal muy cool!</p>
@@ -26,6 +26,7 @@
       $okButton.addEventListener('click', (e) => {
         // console.log(e);
         $modal.style.animation = 'modalOUT .7s forwards'
+        $overlay.classList.remove('active')
       })
     </script>
   </body>
