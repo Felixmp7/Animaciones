@@ -17,18 +17,19 @@
         cursor: pointer;
         width: 100px;
         height: 100px;
-        background-image: url(corazon.png);
-        animation-name: like;
-        animation-duration: 2s;
-        animation-timing-function: steps(5);
+        background-image: url('corazon.png');
+        /*animation-name: like;
+        animation-duration: 1s;
+        animation-timing-function: steps(29);*/
+        animation: like .8s steps(28) forwards;
       }
 
       @keyframes like {
         from {
-          transform: translateX(0px);
+          background-position: 0px 0px;
         }
         to {
-          transform: translateX(50px);
+          background-position: -2800px 0px;
         }
       }
     </style>
