@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Twitter Sprites</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .like{
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        background-image: url(corazon.png);
+        animation-name: like;
+        animation-duration: 2s;
+        animation-timing-function: steps(5);
+      }
+
+      @keyframes like {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(50px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="twitter-box">
+      <div class="like"></div>
+    </div>
+
+  </body>
+</html>
