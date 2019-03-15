@@ -64,11 +64,11 @@ input:focus, textarea:focus {
   background-size: cover;
 }
 
-.portada.background.is-animated {
-  /* background-image: url('../media/team-platzi-azul.jpg'); */
+/* .portada.background.is-animated {
+  background-image: url('../media/team-platzi-azul.jpg');
   background-repeat: no-repeat;
   animation: background 15s linear infinite alternate;
-}
+} */
 
 @keyframes background {
   0% {
@@ -243,9 +243,13 @@ input:focus, textarea:focus {
   content: counter(features) ". ";
 }
 
-/*.guitarra.b {
-  height: 190px;
-}*/
+.guitarra.b {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /*.derecha {
@@ -261,12 +265,12 @@ input:focus, textarea:focus {
 .contenedor-guitarra-a {
   padding-left: 20px;
 }
-.contenedor-guitarra-b {
+/* .contenedor-guitarra-b {
   margin-left: 370px;
   position: relative;
   bottom: 90px;
 
-}
+} */
 
 .header {
   position: relative;
