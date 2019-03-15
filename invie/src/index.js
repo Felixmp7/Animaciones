@@ -52,7 +52,18 @@ const initialState = {
     },
   ],
 }
+
 const store = createStore(reducer, initialState);
+
+function reducer(state, action){
+  switch (action.type) {
+    case 'UPDATE_PROPS':
+      const newProps = action.payload.props
+      return{...state, ...newProps}
+  }
+  default: return state;
+}
+
 cheet('i n v i e', () =>{
   console.log('Lo lograste!')
 })
