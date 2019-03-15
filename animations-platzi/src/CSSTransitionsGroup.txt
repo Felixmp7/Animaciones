@@ -25,4 +25,7 @@ transicion.
 
 Otra cosa importante para que React pueda interpretar nuestras transiciones son
 los keys, que se le deben agregar al elemento que este envuelto por el CSSTransitionsGroup
-y debe ser dinamico
+y debe ser dinamico.
+
+Para ahorrarme trabajar con las 4 clases que dije que debia crear, puedo simplemente
+darle a 2 de esas clases la animacion que ya cree previamente en css
