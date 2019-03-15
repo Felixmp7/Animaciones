@@ -5,20 +5,10 @@ import './css/invie.css';
 import Portada from './components/Portada';
 import Guitarras from './components/Guitarras';
 import Footer from './components/Footer';
-//Media
 import logoInvie from './media/invie.png';
 import acustica from './media/invie-acustica.png';
 import classic from './media/invie-classic.png';
-//Dependencies
-import cheet from 'cheet.js';
 
-cheet('i n v i e', () =>{
-  console.log('Lo lograste!')
-})
-
-cheet('b a c k', () =>{
-  console.log('Regresaste!')
-})
 const data = {
   menu: [
     {
@@ -58,7 +48,7 @@ const data = {
       ],
     },
   ],
-}
+} 
 
 class Invie extends Component {
   render() {

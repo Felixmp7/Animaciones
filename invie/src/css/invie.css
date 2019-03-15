@@ -206,7 +206,7 @@ input:focus, textarea:focus {
 
 .guitarra:hover {
   /*box-shadow: x y % color;*/
-  box-shadow: 10px 10px 0 #ff3149;
+  box-shadow: 10px 10px 10px #ff3149;
 }
 .guitarra-name {
   font-size: 3em;
@@ -217,7 +217,7 @@ input:focus, textarea:focus {
 /*.guitarra:nth-of-type(2) {*/
 /*.guitarra:nth-of-type(odd) {*/
 .guitarra:nth-of-type(even):hover {
-  box-shadow: -10px 10px 0 black;
+  box-shadow: -10px 10px 10px black;
 }
 .guitarra:nth-of-type(even) {
   /*background: green;*/
