@@ -1,5 +1,4 @@
 import React , { Component } from 'react';
-import invie from '../media/invie.png';
 
 class Portada extends Component {
   render(){
@@ -7,7 +6,7 @@ class Portada extends Component {
       <section id="portada" className="portada background">
         <header id="header" className="header contenedor">
           <figure className="logotipo">
-            <img src={invie} width="186" height="60" alt="Invie logotipo"/>
+            <img src={this.props.logo} width="186" height="60" alt="Invie logotipo"/>
           </figure>
           <span className="burguer-button icon-menu" id="burguer-button"></span>
           <nav className="menu" id="menu">
