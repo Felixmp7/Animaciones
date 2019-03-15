@@ -4,8 +4,8 @@ import { connect } from 'react-redux';
 
 function mapStateToProps(state){
   return {
-    logo: store.logoInvie,
-    menu: store.menu,
+    logo: state.logoInvie,
+    menu: state.menu,
   }
 }
 

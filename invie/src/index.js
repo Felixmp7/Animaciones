@@ -57,12 +57,12 @@ const store = createStore(reducer, initialState);
 
 function reducer(state, action){
   switch (action.type) {
-    case 'UPDATE_PROPS':
+    case 'UPDATE_PROPS': {
       const newProps = action.payload.props
       return{...state, ...newProps}
+    }
+    default: return state
   }
-  default:
-    return state
 }
 
 const easter = {
@@ -78,7 +78,7 @@ cheet('i n v i e', () =>{
   store.dispatch({
     type: 'UPDATE_PROPS',
     payload: {
-      props: {}
+      props: easter
     }
   })
   // console.log('Lo lograste!')
