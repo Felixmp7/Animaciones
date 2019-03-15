@@ -11,6 +11,8 @@ class App extends Component {
         <header className="App-header">
           <CSSTransitionsGroup
             transitionName="fade"
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}
             >
             <img src={logo} className="App-logo" alt="logo" />
           </CSSTransitionsGroup>
