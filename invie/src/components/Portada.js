@@ -2,6 +2,20 @@ import React , { Component } from 'react';
 import invie from '../media/invie.png';
 
 class Portada extends Component {
+  const menu = [
+    {
+      href: 'index.html',
+      title: 'Home'
+    },
+    {
+      href: '#guitarras',
+      title: 'Guitarras'
+    },
+    {
+      href: 'precios.html',
+      title: 'Precios'
+    },
+  ]
   render(){
     return(
       <section id="portada" className="portada background">
