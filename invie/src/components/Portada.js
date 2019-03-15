@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import bgPortada from '../media/background.png';
+import invie from '../media/invie.png';
 
 class Portada extends Component {
   render(){
@@ -7,7 +7,7 @@ class Portada extends Component {
       <section id="portada" className="portada background">
         <header id="header" className="header contenedor">
           <figure className="logotipo">
-            <img src={bgPortada} srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie logotipo"/>
+            <img src={invie} width="186" height="60" alt="Invie logotipo"/>
           </figure>
           <span className="burguer-button icon-menu" id="burguer-button"></span>
           <nav className="menu" id="menu">
