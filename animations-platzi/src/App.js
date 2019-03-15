@@ -22,7 +22,11 @@ class App extends Component {
             transitionEnterTimeout={1000}
             transitionLeaveTimeout={1000}
             >
-            <img src={this.state.logo} className="App-logo" alt="logo" />
+            <img
+              key={this.state.logo}
+              src={this.state.logo}
+              className="App-logo"
+              alt="logo" />
           </CSSTransitionsGroup>
           <button onClick={this.cambiarLogo.bind(this)}>Click Me!</button>
           <p>
