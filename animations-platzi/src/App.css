@@ -54,3 +54,26 @@
     opacity: 1;
   }
 }
+
+.fade{
+
+}
+
+.fade-enter{
+  background-color: red;
+}
+
+.fade-enter-active{
+  background-color: blue;
+  transition-duration: 1s;
+}
+
+
+.fade-leave{
+  transform: rotateY(0);
+}
+
+.fade-leave-active{
+  transform: rotateY(500);
+  transition-duration: 1s;
+}

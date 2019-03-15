@@ -5,6 +5,14 @@ import './App.css';
 import CSSTransitionsGroup from 'react-addons-css-transition-group';
 
 class App extends Component {
+  state = {
+    logo: logo,
+  }
+  cambiarLogo() {
+    this.setState({
+      logo: logoPlatzi,
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -14,8 +22,9 @@ class App extends Component {
             transitionEnterTimeout={1000}
             transitionLeaveTimeout={1000}
             >
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={this.state.logo} className="App-logo" alt="logo" />
           </CSSTransitionsGroup>
+          <button onClick={this.cambiarLogo.bind(this)}>Click Me!</button>
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
