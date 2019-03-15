@@ -1,4 +1,13 @@
 import React , { Component } from 'react';
+import { connect } from 'react-redux';
+
+
+function mapStateToProps(state){
+  return {
+    logo: store.logoInvie,
+    menu: store.menu,
+  }
+}
 
 class Portada extends Component {
   render(){
@@ -31,4 +40,4 @@ class Portada extends Component {
   }
 }
 
-export default Portada;
+export default connect(mapStateToProps)(Portada);

@@ -61,18 +61,20 @@ function reducer(state, action){
       const newProps = action.payload.props
       return{...state, ...newProps}
   }
-  default: return state;
+  default:
+    return state
+}
+
+const easter = {
+  menu: [
+    {
+      href: 'index.html',
+      title: 'Home',
+    },
+  ],
 }
 
 cheet('i n v i e', () =>{
-  const easter = {
-    menu: [
-      {
-        href: 'index.html',
-        title: 'Home',
-      },
-    ],
-  }
   store.dispatch({
     type: 'UPDATE_PROPS',
     payload: {

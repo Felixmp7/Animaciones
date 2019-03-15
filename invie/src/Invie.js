@@ -54,8 +54,10 @@ class Invie extends Component {
   render() {
     return (
       <section className="Invie">
-        <Portada menu={data.menu} logo={data.logoInvie}/>
-        <Guitarras guitarras={data.guitarras}/>
+        {/* <Portada menu={data.menu} logo={data.logoInvie}/> */}
+        <Portada />
+        {/* <Guitarras guitarras={data.guitarras}/> */}
+        <Guitarras />
         <Footer />
       </section>
     );
