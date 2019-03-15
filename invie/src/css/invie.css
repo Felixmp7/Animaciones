@@ -243,13 +243,13 @@ input:focus, textarea:focus {
   content: counter(features) ". ";
 }
 
-.guitarra.b {
+/* .guitarra.b {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-}
+} */
 
 
 /*.derecha {
