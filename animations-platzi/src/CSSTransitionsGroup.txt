@@ -3,3 +3,18 @@ En React, las animaciones tienen 3 estados:
 1. TransitionEnter
 2. TransitionLeave
 3. TransitionAppear
+
+En el archivo CSS debo crear 3 clases nuevas que entiende React para hacer la
+transicion.
+
+1/ .fade{
+
+}
+
+2/ .fade-enter{
+  Estado inicial de entrada
+}
+
+3/ .fade-enter-active{
+  Estado final de entrada
+}
