@@ -3,24 +3,6 @@ import invie from '../media/invie.png';
 
 class Portada extends Component {
   render(){
-    const menu = [
-      {
-        href: 'index.html',
-        title: 'Home',
-      },
-      {
-        href: '#guitarras',
-        title: 'Guitarras',
-      },
-      {
-        href: 'precios.html',
-        title: 'Precios',
-      },
-      {
-        href: 'hola.html',
-        title: "Don't click me",
-      },
-    ]
     return(
       <section id="portada" className="portada background">
         <header id="header" className="header contenedor">
@@ -30,7 +12,7 @@ class Portada extends Component {
           <span className="burguer-button icon-menu" id="burguer-button"></span>
           <nav className="menu" id="menu">
             <ul>
-              {menu.map((item) => {
+              {this.props.menu.map((item) => {
                 return(
                   <li>
                     <a href={item.href}>{item.title}</a>
