@@ -1,0 +1,5 @@
+En React, las animaciones tienen 3 estados:
+
+1. TransitionEnter
+2. TransitionLeave
+3. TransitionAppear
