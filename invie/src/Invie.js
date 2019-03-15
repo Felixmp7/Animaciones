@@ -5,6 +5,8 @@ import Guitarras from './components/Guitarras';
 import Footer from './components/Footer';
 
 import logoInvie from './media/invie.png';
+import acustica from './media/invie-acustica.png';
+import classic from './media/invie-classic.png';
 
 const data = {
   menu: [
@@ -20,12 +22,31 @@ const data = {
       href: 'precios.html',
       title: 'Precios',
     },
-    // {
-    //   href: 'hola.html',
-    //   title: "Don't click me",
-    // },
   ],
   logoInvie: logoInvie,
+  //Guitarras
+  guitarras: [
+    {
+      image: acustica,
+      alt: 'Guitarra Invie Acustica',
+      name: 'Invie Acustica',
+      features: [
+        'Estilo vintage',
+        'Madera pura',
+        'Incluye estuche invisible de aluminio',
+      ],
+    },
+    {
+      image: classic,
+      alt: 'Guitarra Invie Classic',
+      name: 'Invie Classic',
+      features: [
+        'Estilo Classic',
+        'Liviana',
+        'Vive como un RockStar',
+      ],
+    },
+  ],
 }
 
 class Invie extends Component {
@@ -33,7 +54,7 @@ class Invie extends Component {
     return (
       <section className="Invie">
         <Portada menu={data.menu} logo={data.logoInvie}/>
-        <Guitarras />
+        <Guitarras guitarras={data.guitarras}/>
         <Footer />
       </section>
     );
