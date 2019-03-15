@@ -11,9 +11,9 @@ class Portada extends Component {
           <span className="burguer-button icon-menu" id="burguer-button"></span>
           <nav className="menu" id="menu">
             <ul>
-              {this.props.menu.map((item) => {
+              {this.props.menu.map((item,index) => {
                 return(
-                  <li>
+                  <li key={index}>
                     <a href={item.href}>{item.title}</a>
                   </li>
                 )
