@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import logoPlatzi from './platzi.png';
 import './App.css';
 import CSSTransitionsGroup from 'react-addons-css-transition-group';
 
@@ -8,7 +9,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <CSSTransitionsGroup>
+          <CSSTransitionsGroup
+            transitionName="fade"
+            >
             <img src={logo} className="App-logo" alt="logo" />
           </CSSTransitionsGroup>
           <p>
