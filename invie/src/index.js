@@ -65,15 +65,35 @@ function reducer(state, action){
 }
 
 cheet('i n v i e', () =>{
-  console.log('Lo lograste!')
+  const easter = {
+    menu: [
+      {
+        href: 'index.html',
+        title: 'Home',
+      },
+    ],
+  }
+  store.dispatch({
+    type: 'UPDATE_PROPS',
+    payload: {
+      props: {}
+    }
+  })
+  // console.log('Lo lograste!')
 })
 
 cheet('b a c k', () =>{
-  console.log('Regresaste!')
+  store.dispatch({
+    type: 'UPDATE_PROPS',
+    payload: {
+      props: initialState
+    }
+  })
+  // console.log('Regresaste!')
 })
 
 ReactDOM.render(
-  <Provider>
+  <Provider store={store}>
     <Invie />
   </Provider>
   , document.getElementById('root'));
