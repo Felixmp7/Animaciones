@@ -13,7 +13,11 @@ import classic from './media/invie-classic.png';
 import cheet from 'cheet.js';
 
 cheet('i n v i e', () =>{
-  console.log('EXITO!!')
+  console.log('Lo lograste!')
+})
+
+cheet('b a c k', () =>{
+  console.log('Regresaste!')
 })
 const data = {
   menu: [
