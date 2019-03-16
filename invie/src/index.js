@@ -78,17 +78,17 @@ const easter = {
   ],
   guitarras: [
     {
-      image: acustica,
-      alt: 'Guitarra Invie Acustica',
-      name: 'Invie Acustica',
+      image: easterA,
+      alt: 'Guitarra Invie Padre de Familia',
+      name: 'Invie Familia',
       features: [
-        'Estilo vintage',
-        'Madera pura',
-        'Incluye estuche invisible de aluminio',
+        'Listo para copiar los Simpsons',
+        'Aire puro',
+        'Chistes malos',
       ],
     },
     {
-      image: classic,
+      image: easterB,
       alt: 'Guitarra Invie Classic',
       name: 'Invie Classic',
       features: [

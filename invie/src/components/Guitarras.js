@@ -18,7 +18,9 @@ class Guitarras extends Component {
             return(
               <article className="guitarra" key={index}>
               <CSSTG
-                transitionName=""
+                transitionName="flicker"
+                transitionEnterTimeout={500}
+                transitionEnterTimeout={500}
               >
                 <img className="guitarra-image"
                 key={guitarra.image}

@@ -1,0 +1,114 @@
+.flicker{
+
+}
+
+.flicker-enter{
+  animation: flicker .5s linear;
+}
+
+.flicker-enter-active {
+
+}
+
+.flicker-leave{
+  animation: flicker .5s linear;
+}
+
+.flicker-leave-active {
+
+}
+
+@keyframes flicker {
+  from {
+    opacity: 0.5;
+    transform: rotateY(0);
+  }
+  4% {
+    opacity: .5;
+  }
+  6% {
+    opacity: .45;
+  }
+  8% {
+    opacity: .55;
+  }
+  10% {
+    opacity: .45;
+  }
+  11% {
+    opacity: .5;
+  }
+  12% {
+    opacity: .65;
+  }
+  14% {
+    opacity: .55;
+  }
+  16% {
+    opacity: .70;
+  }
+  17% {
+    opacity: .55;
+  }
+  19% {
+    opacity: .5;
+  }
+  20% {
+    opacity: .5;
+  }
+  24% {
+    opacity: .5;
+  }
+  26% {
+    opacity: .69;
+  }
+  28% {
+    opacity: .5;
+  }
+  38% {
+    opacity: .45;
+  }
+  40% {
+    opacity: .5;
+  }
+  42% {
+    opacity: .6;
+  }
+  44% {
+    opacity: .5;
+  }
+  46% {
+    opacity: .5;
+  }
+  56% {
+    opacity: .5;
+  }
+  58% {
+    opacity: .75;
+  }
+  60% {
+    opacity: .5;
+  }
+  68% {
+    opacity: .5;
+  }
+  70% {
+    opacity: .6;
+  }
+  72% {
+    opacity: .5;
+  }
+  93% {
+    opacity: .5;
+  }
+  95% {
+    opacity: .6;
+  }
+  97% {
+    opacity: .5;
+  }
+  to {
+    opacity: .5;
+    transform: rotateY(360deg);
+  }
+}
