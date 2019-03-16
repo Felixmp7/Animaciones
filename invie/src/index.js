@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
+import './css/invie.css';
+import './css/animations.css';
 import Invie from './Invie';
 import * as serviceWorker from './serviceWorker';
 //Media
 import logoInvie from './media/invie.png';
 import acustica from './media/invie-acustica.png';
 import classic from './media/invie-classic.png';
+import easterA from './media/easter-a.png';
+import easterB from './media/easter-b.png';
 //Dependencies
 import cheet from 'cheet.js';
 import { Provider } from 'react-redux';
@@ -72,6 +76,28 @@ const easter = {
       title: 'Home',
     },
   ],
+  guitarras: [
+    {
+      image: acustica,
+      alt: 'Guitarra Invie Acustica',
+      name: 'Invie Acustica',
+      features: [
+        'Estilo vintage',
+        'Madera pura',
+        'Incluye estuche invisible de aluminio',
+      ],
+    },
+    {
+      image: classic,
+      alt: 'Guitarra Invie Classic',
+      name: 'Invie Classic',
+      features: [
+        'Estilo Classic',
+        'Liviana',
+        'Vive como un RockStar',
+      ],
+    },
+  ]
 }
 
 cheet('i n v i e', () =>{

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-//CSS
-import './css/invie.css';
 //Components
 import Portada from './components/Portada';
 import Guitarras from './components/Guitarras';
