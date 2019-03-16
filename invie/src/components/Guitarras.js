@@ -33,7 +33,7 @@ class Guitarras extends Component {
               <CSSTG
                 transitionName="fade"
                 transitionEnterTimeout={300}
-                transitionLeaveTimeout={300}
+                transitionLeave={false}
               >
                 <div className="contenedor-guitarra" key={guitarra.name}>
                 <h3 className="guitarra-name">{guitarra.name}</h3>
