@@ -3,19 +3,37 @@
 }
 
 .flicker-enter{
-  animation: flicker .5s linear;
+animation-duration: .5s, .7s;
+animation-name: flicker , shake;
+animation-timing-function: linear , ease-in-out;
 }
 
-.flicker-enter-active {
+.flicker-enter-active{
 
 }
-
 .flicker-leave{
-  animation: flicker .5s linear;
+  animation-duration: .5s ,.7s;
+  animation-name: flicker , shake;
+  animation-timing-function: linear , ease-in-out;
 }
 
 .flicker-leave-active {
 
+}
+
+@keyframes shake {
+  10% , 90% {
+    transform: translateX(-1px);
+  }
+  20% , 80% {
+    transform: translateX(2px);
+  }
+  30% , 50% , 70% {
+    transform: translateX(-4px);
+  }
+  40% , 60% {
+    transform: translateX(4px);
+    }
 }
 
 @keyframes flicker {
