@@ -89,10 +89,10 @@ const easter = {
     },
     {
       image: easterB,
-      alt: 'Guitarra Invie Classic',
-      name: 'Invie Classic',
+      alt: 'Guitarra Invie Anime',
+      name: 'Invie Anime',
       features: [
-        'Estilo Classic',
+        'Estilo Anime',
         'Liviana',
         'Vive como un RockStar',
       ],

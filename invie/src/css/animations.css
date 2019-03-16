@@ -112,3 +112,29 @@
     transform: rotateY(360deg);
   }
 }
+
+.fade{
+
+}
+
+.fade-enter{
+  opacity: 0;
+  transform: scale(.5);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: .4s;
+}
+
+.fade-leave{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-leave-active {
+  opacity: 0;
+  transform: scale(.5);
+  transition: .4s;
+}

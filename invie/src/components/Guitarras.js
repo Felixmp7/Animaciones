@@ -20,7 +20,7 @@ class Guitarras extends Component {
               <CSSTG
                 transitionName="flicker"
                 transitionEnterTimeout={500}
-                transitionEnterTimeout={500}
+                transitionLeaveTimeout={500}
               >
                 <img className="guitarra-image"
                 key={guitarra.image}
@@ -29,18 +29,25 @@ class Guitarras extends Component {
                 width="350"
                 />
               </CSSTG>
-                <div className="contenedor-guitarra">
-                  <h3 className="guitarra-name">{guitarra.name}</h3>
-                  <ol>
-                    {
-                      guitarra.features.map((feature, index) => {
-                        return(
-                          <li key={index}>{feature}</li>
-                        )
-                      })
-                    }
-                  </ol>
+
+              <CSSTG
+                transitionName="fade"
+                transitionEnterTimeout={300}
+                transitionLeaveTimeout={300}
+              >
+                <div className="contenedor-guitarra" key={guitarra.name}>
+                <h3 className="guitarra-name">{guitarra.name}</h3>
+                <ol>
+                {
+                  guitarra.features.map((feature, index) => {
+                    return(
+                      <li key={index}>{feature}</li>
+                    )
+                  })
+                }
+                </ol>
                 </div>
+              </CSSTG>
               </article>
             )
           })
