@@ -1,5 +1,7 @@
 import React , { Component } from 'react';
 import { connect } from 'react-redux';
+import CSSTG from 'react-addons-css-transition-group';
+
 
 
 function mapStateToProps(state){
@@ -30,11 +32,18 @@ class Portada extends Component {
             </ul>
           </nav>
         </header>
-        <div className="contenedor">
-          <h1 className="titulo">Guitarras <span>invie</span>sibles</h1>
-          <h3 className="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
-          <a className="button" href="#guitarras">Conoce mas</a>
-        </div>
+        <CSSTG
+          transitionName="animationInOut"
+          transitionEnterTimeout={800}
+          transitionLeaveTimeout={800}
+
+        >
+          <div className="contenedor">
+            <h1 className="titulo">Guitarras <span>invie</span>sibles</h1>
+            <h3 className="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
+            <a className="button" href="#guitarras">Conoce mas</a>
+          </div>
+        </CSSTG>
     </section>
     )
   }

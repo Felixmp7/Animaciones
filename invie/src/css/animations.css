@@ -12,7 +12,7 @@ animation-timing-function: linear , ease-in-out;
 
 }
 .flicker-leave{
-  animation-duration: .5s ,.7s;
+  animation-duration: .5s, .7s;
   animation-name: flicker , shake;
   animation-timing-function: linear , ease-in-out;
 }
@@ -155,4 +155,36 @@ animation-timing-function: linear , ease-in-out;
   opacity: 0;
   transform: scale(.5);
   transition: .4s;
+}
+
+/* animation: modalIN .7s forwards; */
+
+@keyframes animationIN {
+  0%{
+    transform: translateY(-3000px);
+  }
+  50%{
+    transform: translateY(20px);
+  }
+  75%{
+    transform: translateY(-10px);
+  }
+  90%{
+    transform: translateY(5px);
+  }
+}
+
+@keyframes animationOUT {
+  0%{
+    transform: translateY(5px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  75%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(-3000px);
+  }
 }

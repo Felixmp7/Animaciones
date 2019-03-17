@@ -70,12 +70,6 @@ function reducer(state, action){
 }
 
 const easter = {
-  menu: [
-    {
-      href: 'index.html',
-      title: 'Home',
-    },
-  ],
   guitarras: [
     {
       image: easterA,
