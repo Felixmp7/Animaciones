@@ -157,7 +157,15 @@ animation-timing-function: linear , ease-in-out;
   transition: .4s;
 }
 
-/* animation: modalIN .7s forwards; */
+
+.animationInOut-enter{
+  animation: animationIN .7s;
+}
+
+.animationInOut-leave{
+  animation: animationOUT .7s;
+}
+
 
 @keyframes animationIN {
   0%{
