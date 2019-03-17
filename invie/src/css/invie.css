@@ -64,11 +64,11 @@ input:focus, textarea:focus {
   background-size: cover;
 }
 
-/* .portada.background.is-animated {
-  background-image: url('../media/team-platzi-azul.jpg');
-  background-repeat: no-repeat;
+.portada.background.is-animated {
+  /* background-image: url('../media/team-platzi-azul.jpg');
+  background-repeat: no-repeat; */
   animation: background 15s linear infinite alternate;
-} */
+}
 
 @keyframes background {
   0% {
